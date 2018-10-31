@@ -44,5 +44,7 @@ public void coverNOteDetails() throws InterruptedException
 	  
 	  //add cover note details
 	  objAcn.addCoverNoteDetails("dept 1","F01","BP 1","350","Open","BN 1","50","20");
+	  
+	  driver.quit();
 }
 }
