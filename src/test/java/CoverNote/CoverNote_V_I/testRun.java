@@ -32,15 +32,15 @@ public void coverNOteDetails() throws InterruptedException
       objLp=new Loginpage(driver);
 	  objAcn=new AddCoverNote(driver);objLp.enterUsername("AUX_DarshikaH");
 	  objLp.enterPassword("692408AzIT");
-	  Thread.sleep(1000);
+	  //Thread.sleep(1000);
 	  
 	  //login to the system
 	  objLp.clickLoginButton();
-	  Thread.sleep(2500);
+	 // Thread.sleep(2500);
 	  
 	  //click on the page
 	  objAcn.pageNavigation();
-	  Thread.sleep(1000);
+	 // Thread.sleep(1000);
 	  
 	  //add cover note details
 	  objAcn.addCoverNoteDetails("dept 1","F01","BP 1","350","Open","BN 1","50","20");

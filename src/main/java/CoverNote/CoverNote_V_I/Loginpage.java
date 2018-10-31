@@ -7,10 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 	
 	public class Loginpage {
-		WebDriver driver;
-		By username=By.name("username");
-	    By password=By.name("password");
-	    By LoginButton=By.xpath("/html/body/section/div/div/div[2]/form/div[3]/div[2]/button");
+		private WebDriver driver;
+		private By username=By.name("username");
+	    private By password=By.name("password");
+	    private By LoginButton=By.xpath("/html/body/section/div/div/div[2]/form/div[3]/div[2]/button");
 		
 		
 		
