@@ -47,6 +47,7 @@ public class AddCoverNote {
 		 
 		deptCode=new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("deptCode"))));
 		deptCode.selectByVisibleText(strdeptCode);
+		Thread.sleep(3000);
 		fundType=new Select(driver.findElement(By.id("fundType")));
 		fundType.selectByVisibleText(strfundType);
 		bookNumPrefix=new Select(driver.findElement(By.id("bookNumPrefix")));
