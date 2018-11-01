@@ -45,23 +45,36 @@ public class AddCoverNote {
 	{
 		
 		 
+		//select department code
 		deptCode=new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("deptCode"))));
 		deptCode.selectByVisibleText(strdeptCode);
 		Thread.sleep(3000);
+		
+		//select fund type
 		fundType=new Select(driver.findElement(By.id("fundType")));
 		fundType.selectByVisibleText(strfundType);
+		
+		//select book number
 		bookNumPrefix=new Select(driver.findElement(By.id("bookNumPrefix")));
 		bookNumPrefix.selectByVisibleText(strbookNumPrefix);
+		
+		//enter number of books
 		bookNumber=driver.findElement(By.id("bookNumber"));
 		bookNumber.sendKeys(strbookNumber);
+		
+		//select status
 		status = new Select(driver.findElement(By.id("status")));
 		status.selectByVisibleText(strStatus);
+		
+		//select booklet nature
 		bookletNature= new Select(driver.findElement(By.id("bookletNature")));
-		fundType=new Select(driver.findElement(By.id("fundType")));
-		fundType.selectByVisibleText(strfundType);
 		bookletNature.selectByVisibleText(strbookletNature);
+		
+		//select pages
 		pages=new Select(driver.findElement(By.id("pages")));
 		pages.selectByVisibleText(strPages);
+		
+		//enter from number
 		fromNo=driver.findElement(By.id("fromNo"));
 		fromNo.sendKeys(strfromNo);
 		

@@ -48,17 +48,12 @@ public void coverNOteDetails() throws InterruptedException, EncryptedDocumentExc
 	  //click on the page
 	  objAcn.pageNavigation();
 	  
-	  ExcelReader ex=new ExcelReader("ddd");
+	  //pass the excel file for the excel reader
+	  ExcelReader ex=new ExcelReader("src\\main\\java\\Resources\\CN_test_data.xlsx");
 	  
-	  
-	  //System.out.println("arshad_test "+ex.getData("",0));
-	 // Thread.sleep(1000);
-	  
+
 	  //add cover note details
-	  //deptarment code, finance code, book code
-	 // objAcn.addCoverNoteDetails("dept 1","FT1","BP 1","350","Open","BN 1","50","20");
-	  
-	  objAcn.addCoverNoteDetails(ex.getData("A", 1),ex.getData("B", 1),ex.getData("C", 1),"350","Open","BN 1","50","20");
+	  objAcn.addCoverNoteDetails(ex.getData("deptCode", 1),ex.getData("fundType", 1),ex.getData("bookNumber", 1),ex.getData("numberOfBooks", 1),ex.getData("status", 1),ex.getData("bookletNature", 1),ex.getData("numberOfPages", 1),ex.getData("fromNumber", 1));
 	  
 	  driver.quit();
 }
