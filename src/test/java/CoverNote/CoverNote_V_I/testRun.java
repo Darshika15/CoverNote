@@ -43,7 +43,6 @@ public void coverNOteDetails() throws InterruptedException, EncryptedDocumentExc
 	  
 	  //login to the system
 	  objLp.clickLoginButton();
-	 // Thread.sleep(2500);
 	  
 	  //click on the page
 	  objAcn.pageNavigation();
@@ -55,6 +54,6 @@ public void coverNOteDetails() throws InterruptedException, EncryptedDocumentExc
 	  //add cover note details
 	  objAcn.addCoverNoteDetails(ex.getData("deptCode", 1),ex.getData("fundType", 1),ex.getData("bookNumber", 1),ex.getData("numberOfBooks", 1),ex.getData("status", 1),ex.getData("bookletNature", 1),ex.getData("numberOfPages", 1),ex.getData("fromNumber", 1));
 	  
-	  driver.quit();
+	  //driver.quit();
 }
 }
