@@ -52,8 +52,8 @@ public void coverNOteDetails() throws InterruptedException, EncryptedDocumentExc
 	  
 
 	  //add cover note details
-	  objAcn.addCoverNoteDetails(ex.getData("deptCode", 1),ex.getData("fundType", 1),ex.getData("bookNumber", 1),ex.getData("numberOfBooks", 1),ex.getData("status", 1),ex.getData("bookletNature", 1),ex.getData("numberOfPages", 1),ex.getData("fromNumber", 1));
-	  
+	  objAcn.addCoverNoteDetails(ex.getData("deptCode", 1),ex.getData("fundType", 1),ex.getData("bookPrefix", 1),ex.getData("bookNumber", 1),ex.getData("numberOfBooks", 1),ex.getData("status", 1),ex.getData("bookletNature", 1),ex.getData("numberOfPages", 1),ex.getData("fromNumber", 1));
+	  //(String strdeptCode,String strfundType,String strbookNumPrefix,String strbookNumber,String strnoOfBooks,String strStatus,String strbookletNature,String strPages,String strfromNo)
 	  //driver.quit();
 }
 }

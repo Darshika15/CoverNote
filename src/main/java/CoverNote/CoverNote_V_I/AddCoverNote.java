@@ -13,6 +13,7 @@ public class AddCoverNote {
 	private Select fundType;
 	private Select bookNumPrefix;
 	private WebElement bookNumber;
+	private WebElement noOfBooks;
 	private WebElement coverNoteLink;
 	private WebElement coverNoteGRNLink;
 	private Select bookletNature;
@@ -41,7 +42,7 @@ public class AddCoverNote {
 		
 	}
 	
-	public void addCoverNoteDetails(String strdeptCode,String strfundType,String strbookNumPrefix,String strbookNumber,String strStatus,String strbookletNature,String strPages,String strfromNo) throws InterruptedException
+	public void addCoverNoteDetails(String strdeptCode,String strfundType,String strbookNumPrefix,String strbookNumber,String strnoOfBooks,String strStatus,String strbookletNature,String strPages,String strfromNo) throws InterruptedException
 	{
 		
 		 
@@ -54,13 +55,17 @@ public class AddCoverNote {
 		fundType=new Select(driver.findElement(By.id("fundType")));
 		fundType.selectByVisibleText(strfundType);
 		
-		//select book number
+		//select book prefix
 		bookNumPrefix=new Select(driver.findElement(By.id("bookNumPrefix")));
 		bookNumPrefix.selectByVisibleText(strbookNumPrefix);
 		
-		//enter number of books
+		//enter  book number
 		bookNumber=driver.findElement(By.id("bookNumber"));
 		bookNumber.sendKeys(strbookNumber);
+		
+		//enter no_of_books
+		noOfBooks=driver.findElement(By.id("noOfBooks"));
+		noOfBooks.sendKeys(strnoOfBooks);
 		
 		//select status
 		status = new Select(driver.findElement(By.id("status")));
