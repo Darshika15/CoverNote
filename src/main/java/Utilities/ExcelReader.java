@@ -15,10 +15,10 @@ import org.apache.poi.ss.util.CellReference;
 
 public class ExcelReader {
 
-	private Workbook workbook;
+	private static Workbook workbook;
 	private String path;
 	private Iterator<Row> rowIterator;
-	private Sheet sheet;
+	private static Sheet sheet;
 	
 	public ExcelReader (String path) throws EncryptedDocumentException, InvalidFormatException, IOException {
 		this.path = path;
@@ -29,14 +29,14 @@ public class ExcelReader {
 
 	}
 	
-	public String getData(String key, int row) {
+	public static String getData(String key, int row) {
 		
 
 		return workbook.getSheetAt(0).getRow(row).getCell(getColumnId(key)).toString(); 
 		
 	}
 	
-	public int getColumnId(String column) {
+	public static int getColumnId(String column) {
 		int index=0;
 		
 		Iterator<Row> rowIt = sheet.iterator();

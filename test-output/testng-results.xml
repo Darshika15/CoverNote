@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13050" started-at="2018-11-01T08:59:04Z" finished-at="2018-11-01T08:59:17Z">
+  <suite name="Default suite" duration-ms="38486" started-at="2019-08-08T11:09:51Z" finished-at="2019-08-08T11:10:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13050" started-at="2018-11-01T08:59:04Z" finished-at="2018-11-01T08:59:17Z">
-      <class name="CoverNote.CoverNote_V_I.testRun">
-        <test-method status="PASS" signature="setup()[pri:0, instance:CoverNote.CoverNote_V_I.testRun@4883b407]" name="setup" is-config="true" duration-ms="5967" started-at="2018-11-01T08:59:04Z" finished-at="2018-11-01T08:59:10Z">
+    <test name="Default test" duration-ms="38486" started-at="2019-08-08T11:09:51Z" finished-at="2019-08-08T11:10:30Z">
+      <class name="CoverNote.CoverNote_V_I.TestInventory">
+        <test-method status="PASS" signature="setup()[pri:0, instance:CoverNote.CoverNote_V_I.TestInventory@6093dd95]" name="setup" duration-ms="38467" started-at="2019-08-08T11:09:51Z" finished-at="2019-08-08T11:10:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="coverNOteDetails()[pri:0, instance:CoverNote.CoverNote_V_I.testRun@4883b407]" name="coverNOteDetails" duration-ms="7069" started-at="2018-11-01T08:59:10Z" finished-at="2018-11-01T08:59:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- coverNOteDetails -->
-      </class> <!-- CoverNote.CoverNote_V_I.testRun -->
+      </class> <!-- CoverNote.CoverNote_V_I.TestInventory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

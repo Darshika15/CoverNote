@@ -9,23 +9,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddCoverNote {
 	WebDriver driver;
-	private  Select deptCode;
+    private  Select deptCode;
 	private Select fundType;
 	private Select bookNumPrefix;
+	private Select bookletNature;
+	private Select pages;
 	private WebElement bookNumber;
 	private WebElement noOfBooks;
 	private WebElement coverNoteLink;
 	private WebElement coverNoteGRNLink;
-	private Select bookletNature;
-	private Select pages;
+	private WebElement poRef;
+	private WebElement poRefResult;
 	private WebElement fromNo;
 	private Select status;
 	private WebDriverWait wait;
 
-	
-	
-	
-	
+		
 	public  AddCoverNote(WebDriver driver) {
 		this.driver=driver;
 		wait=new WebDriverWait(driver, 30);
@@ -44,8 +43,13 @@ public class AddCoverNote {
 	
 	public void addCoverNoteDetails(String strdeptCode,String strfundType,String strbookNumPrefix,String strbookNumber,String strnoOfBooks,String strStatus,String strbookletNature,String strPages,String strfromNo) throws InterruptedException
 	{
-		
-		 
+		poRef=driver.findElement(By.id("select2-chosen-2"));
+		Thread.sleep(1000);
+		poRef.click();
+		Thread.sleep(1000);
+		poRefResult=driver.findElement(By.id("select2-results-2"));
+		Thread.sleep(1000);
+		poRefResult.click();
 		//select department code
 		deptCode=new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("deptCode"))));
 		deptCode.selectByVisibleText(strdeptCode);
